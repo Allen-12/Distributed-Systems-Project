@@ -1,4 +1,4 @@
-package knockknockserver;
+package sockets;
 
 import java.net.*;
 import java.io.*;
@@ -7,13 +7,6 @@ public class SocketServer
 {
     public static void main(String[] args) throws IOException
     {
-//        if (args.length != 1)
-//        {
-//            System.err.println("Usage: java SocketServer <port number>");
-//            System.exit(1);
-//        }
-
-//        int portNumber = Integer.parseInt(args[0]);
         int portNumber = 9090;
 
         try
@@ -41,9 +34,10 @@ public class SocketServer
                     break;
                 }
             }
-        } catch (IOException e) {
-            System.out.println("Exception caught when trying to listen on port "
-                + portNumber + " or listening for a connection");
+        }
+        catch (IOException e)
+        {
+            System.out.println("Exception caught when trying to listen on port " + portNumber + " or listening for a connection");
             System.out.println(e.getMessage());
         }
     }
