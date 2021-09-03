@@ -5,7 +5,8 @@
 ### Build Instructions
 1. Open a Command Prompt Window/Terminal
 2. Clone the repository using the `git clone` command
-3. Compile the project files using the `javac` command
+3. Move into the cloned directory using the `cd` command
+4. Compile the project files using the `javac` command
 	 ```sh
 	javac ServerProtocol.java SocketClient.java SocketServer.java
 	```
